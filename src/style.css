@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import "./normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg: #150b2e;
+  --white: #ffffff;
+  --yellow: #ffcd56;
+  --purple: #f3f1ff;
+  --purple2: #8877f3;
+
+  --yellow-hover: #f9d685;
+  --blue: #00ffe0;
+
+  --transition: 0.4s;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+} */
+
+.btn {
+  padding: 10px 25px;
+  background: var(--yellow);
+  border-radius: 15px;
+  color: var(--bg);
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--yellow-hover);
+}
+
+.containerr {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* موبايلات */
+@media (min-width: 576px) {
+  .containerr {
+    max-width: 540px;
+  }
+}
+
+/* تابلت صغير */
+@media (min-width: 768px) {
+  .containerr {
+    max-width: 720px;
+  }
+}
+
+/* تابلت كبير / لابتوب صغير */
+@media (min-width: 992px) {
+  .containerr {
+    max-width: 960px;
+  }
+}
+
+/* ديسكتوب كبير */
+@media (min-width: 1200px) {
+  .containerr {
+    max-width: 1140px;
+  }
+}
+
+/* شاشات ضخمة */
+@media (min-width: 1400px) {
+  .containerr {
+    max-width: 1320px;
+  }
+}
